@@ -13,7 +13,7 @@ st.set_page_config(
 
 # 读取并预处理数据
 try:
-    df = pd.read_excel("D:\\streamlit_env\\student_data_adjusted_rounded1.xlsx")
+    df = pd.read_excel("student_data_adjusted_rounded1.xlsx")
 except FileNotFoundError:
     st.error("数据文件未找到，请检查路径")
     st.stop()
@@ -226,3 +226,4 @@ elif page == "成绩预测":
                 st.warning("预测成绩不及格，请继续努力！")
         else:
             st.error("无数据可用于训练模型，请先导入有效数据！")
+
