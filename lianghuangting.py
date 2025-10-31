@@ -72,7 +72,7 @@ if page == "项目分析":
         with b3:
             st.markdown("**可视化**")
             st.code("Plotly\nMatplotlib", language="python")
-        st.image("images/学生数据分析示意图.png", caption="学生数据分析示意图", width=400)
+        
 
 # 专业数据介绍页面
 elif page == "专业数据介绍":
@@ -226,4 +226,5 @@ elif page == "成绩预测":
                 st.warning("预测成绩不及格，请继续努力！")
         else:
             st.error("无数据可用于训练模型，请先导入有效数据！")
+
 
